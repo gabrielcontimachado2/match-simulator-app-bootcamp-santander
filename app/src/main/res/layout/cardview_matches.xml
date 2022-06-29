@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="10dp"
+    app:cardCornerRadius="@dimen/card_elevation_and_radius"
+    app:cardElevation="@dimen/card_elevation_and_radius">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout_card_matches"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circle_image_card_first_team"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="@dimen/margin_card_image"
+            android:layout_marginTop="@dimen/margin_card_image"
+            android:src="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_card_name_first_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_card_image"
+            android:layout_marginBottom="@dimen/margin_card_image"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:text="@string/card_name_first_team"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/circle_image_card_first_team"
+            app:layout_constraintStart_toStartOf="@id/circle_image_card_first_team"
+            app:layout_constraintTop_toBottomOf="@id/circle_image_card_first_team" />
+
+        <TextView
+            android:id="@+id/text_card_score_first_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_card_image"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/circle_image_card_first_team"
+            app:layout_constraintStart_toEndOf="@id/circle_image_card_first_team"
+            app:layout_constraintTop_toTopOf="@id/circle_image_card_first_team" />
+
+        <TextView
+            android:id="@+id/text_card_versus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:text="@string/card_versus"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/circle_image_card_first_team"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_card_score_first_team"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/circle_image_card_first_team" />
+
+        <TextView
+            android:id="@+id/text_card_score_second_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/circle_image_card_second_team"
+            app:layout_constraintEnd_toStartOf="@+id/circle_image_card_second_team"
+            app:layout_constraintStart_toEndOf="@+id/text_card_versus"
+            app:layout_constraintTop_toTopOf="@+id/circle_image_card_second_team" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circle_image_card_second_team"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="@dimen/margin_card_image"
+            android:layout_marginTop="@dimen/margin_card_image"
+            android:layout_marginEnd="@dimen/margin_card_image"
+            android:src="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_card_name_second_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_card_image"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:text="@string/card_name_second_team"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/circle_image_card_second_team"
+            app:layout_constraintStart_toStartOf="@id/circle_image_card_second_team" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

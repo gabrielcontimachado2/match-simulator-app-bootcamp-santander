@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dimension activity main -->
+    <dimen name="margin_floating_main">24dp</dimen>
+
+    <!-- Dimension card matches -->
+    <dimen name="margin_card_image">16dp</dimen>
+    <dimen name="card_elevation_and_radius">10dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="image_circle">120dp</dimen>
+    <dimen name="margin_default">16dp</dimen>
+</resources>

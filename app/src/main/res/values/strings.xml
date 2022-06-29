@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Simulador</string>
+
+    <!-- Describles -->
+    <string name="descr_floating_simulate">Botão para simular as partidas</string>
+
+    <!-- Card Matches -->
+    <string name="card_name_first_team">TEAM 1</string>
+    <string name="card_point_team">10</string>
+    <string name="card_versus">X</string>
+    <string name="card_name_second_team">TEAM 2</string>
+    <string name="cd_home_team">Image do primeiro time</string>
+
+    <!-- Main Activity-->
+    <string name="message_error_api">Não foi possivel encontrar os dados da partida</string>
+
+</resources>
