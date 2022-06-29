@@ -17,6 +17,7 @@ import com.bootcamp.simulador.domain.Match
 import com.bootcamp.simulador.ui.adapter.MatchesAdapter
 import retrofit2.*
 import retrofit2.converter.gson.GsonConverterFactory
+import java.util.*
 import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
@@ -24,8 +25,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var matchesApi: MatchesApi
     private lateinit var matchRecyclerView: RecyclerView
-    private lateinit var adapterMatches: MatchesAdapter
-
+    private var adapterMatches: MatchesAdapter = MatchesAdapter(Collections.emptyList())
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -54,6 +54,7 @@ class MainActivity : AppCompatActivity() {
         matchRecyclerView = binding.recyclerMatches
         matchRecyclerView.setHasFixedSize(true)
         matchRecyclerView.layoutManager = LinearLayoutManager(this)
+        matchRecyclerView.adapter = adapterMatches
 
         findMatchesFromApi()
 
@@ -137,7 +138,8 @@ class MainActivity : AppCompatActivity() {
                         }
                     }
                 })
-
+            //Crash para testar o Crashlytics
+            //throw RuntimeException("Test Crash") // Force a crash
         }
 
     }

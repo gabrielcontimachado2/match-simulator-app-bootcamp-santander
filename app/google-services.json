@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "94054521482",
+    "project_id": "simulator-matches-b9d52",
+    "storage_bucket": "simulator-matches-b9d52.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94054521482:android:a1c33a91f15306dee02b73",
+        "android_client_info": {
+          "package_name": "com.bootcamp.simulador"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "94054521482-gjntkhumosthacqkgen9s4tmm43rhkl1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDlc2VE40qj2kDWFKid_kS3dBT7dsaIpE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "94054521482-gjntkhumosthacqkgen9s4tmm43rhkl1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
